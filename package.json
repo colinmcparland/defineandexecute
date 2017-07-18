@@ -1,0 +1,21 @@
+{
+  "name": "blankslate-child",
+  "version": "1.0.0",
+  "description": "BlankSlate Child Theme",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "author": "Colin McParland",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-ruby-sass": "^2.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-ruby-sass": "^2.1.1"
+  }
+}

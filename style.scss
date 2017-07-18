@@ -1,0 +1,187 @@
+/*
+Theme Name: BlankSlate Child
+Author: Tiny Bird Web Solutions
+Author URI: http://tinybird.ca
+Description: BlankSlate child theme, including some spicy task-runners and preprocessors.
+Version: 4.0.3
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+
+BlankSlate WordPress Theme © 2011-2015 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+/*  Color variables  */
+
+
+/*  Screen size variables  */
+$desktop: 1281px;
+$laptop: 1100px;
+$tablet: 780px;
+$mobile: 580px;
+$smallmobile: 480px;
+
+/*  Font Variables  */
+$serif: 'Josefin Slab', serif;
+$sans: 'Montserrat', sans-serif;
+
+/*  Global Styles  */
+html {
+	font-size: 18px;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+#loading-overlay {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top:0;
+	left: 0;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*  Begin styles for home page  */
+#video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		display: none;  
+		width: 500px;
+	}
+}
+
+#home-header {
+	position: relative;
+
+	video {
+		width: 100%;
+	}
+}
+
+#home-about {
+	padding: 100px;
+	box-sizing:border-box;
+	background-color: #fff;
+	justify-content: space-around;
+
+	span {
+		width: 50%;
+		padding: 0 50px;
+		box-sizing: border-box;
+
+		h1 {
+			color: #5d9bd2;
+			font-size: 2.5rem;
+			font-family: $serif;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+			color: #264158;
+			font-family: $sans;
+			font-weight: 400;
+		}
+
+		p {
+			color: #000;
+			font-size: 1rem;
+			font-family: $sans;
+			font-weight: 200;
+		}
+	}
+
+	img {
+
+	}
+}
+
+#home-contact {
+	position: relative;
+
+	#home-map {
+		width: 100%;
+		height: 100vh;
+	}
+
+	form {
+		position: absolute;
+		width: 50%;
+		left: 0;
+		height: 100%;
+		flex-direction: column;
+		background-color:rgba(255,255,255,0.8);
+		padding: 0 150px;
+		box-sizing: border-box;
+
+		span {
+			font-family: $sans;
+			font-size: 2rem;
+			margin-bottom: 50px;
+		}
+
+		label {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			font-size: 0.8rem;
+			font-family: $sans;
+			position: relative;
+		}
+
+		input, textarea {
+			display: block;
+			background: transparent;
+			border: none;
+			border-bottom:1px solid #000;
+			width: 100%;
+			margin-bottom: 35px;
+			margin-top: 7px;
+			font-size: 1rem;
+			font-family: $sans;
+			outline: none !important;
+			box-sizing: border-box;
+
+			&[type=submit] {
+				border:1px solid #000;
+				padding:0.9rem 0;
+				cursor: pointer;
+				transition:0.3s;
+
+				&:hover {
+					color: rgba(0,0,0,0.5);
+					border-color: rgba(0,0,0,0.5);
+				}
+
+			}
+		}
+	}
+}
+
+
+
