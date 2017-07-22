@@ -27,7 +27,7 @@ function theme_enqueue_custom_scripts()	{
 	wp_enqueue_script( 'main-script' );
 
 	/*  Styles  */
-	wp_register_style('fonts', 'https://fonts.googleapis.com/css?family=Josefin+Slab:600|Montserrat:200,400');
+	wp_register_style('fonts', 'https://fonts.googleapis.com/css?family=Josefin+Slab:600|Open+Sans:300,700');
 
 	wp_enqueue_style( 'fonts' );
 }
@@ -48,5 +48,12 @@ function submit_form() {
 
 	// TODO: Write mail script yo 
 }
+
+
+/*  Add nav menu  */
+function register_my_menu() {
+  register_nav_menu('main-menu',__( 'Main Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 
 ?>

@@ -14,16 +14,22 @@ function init() {
             zoom: 11,
 
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(33.587165, -117.75), // New York
+            center: new google.maps.LatLng(33.556402, -117.629985), 
 
             // How you would like to style the map. 
             // This is where you would paste any style found on Snazzy Maps.
-            styles: [{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]}]
+            styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
         };
 
         // Get the HTML DOM element that will contain your map 
         // We are using a div with id="map" seen below in the <body>
         var mapElement = document.getElementById('home-map');
+
+        var contentString = "<div><h3>Define and Execute</h3><p>999 Corporate Drive, Suite 100</p><p>Ladera Ranch, CA 92694</p><a href='tel:+1-949-939-6327'><p>(949) 939-6327</p></a><a href='mailto:amir@defineandexecute.com'><p>amir@defineandexecute.com</p></a>";
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
 
         // Create the Google Map using our element and options defined above
         var map = new google.maps.Map(mapElement, mapOptions);
@@ -33,4 +39,12 @@ function init() {
             position: new google.maps.LatLng(33.556402, -117.629985),
             map: map
         });
+
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+        infowindow.open(map,marker);
+
+        map.panBy(-$("#home-form").innerWidth() / 2, 0);
     }

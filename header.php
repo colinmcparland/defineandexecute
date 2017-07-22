@@ -14,9 +14,9 @@
 </div>
 
 <div id="wrapper" class="hfeed">
-	<header id="header" role="banner">
-<!-- 		<nav id="menu" role="navigation">
+	<header id="main-header" role="banner">
+		<nav id="menu" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-		</nav> -->
+		</nav>
 	</header>
-	<div id="container">
+<div id="container">
