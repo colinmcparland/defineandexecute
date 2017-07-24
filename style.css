@@ -79,7 +79,7 @@ p {
   #main-header:hover {
     padding-bottom: 50px; }
   #main-header #menu {
-    width: 50%; }
+    width: auto; }
     #main-header #menu > div {
       width: 100%; }
   #main-header ul {
