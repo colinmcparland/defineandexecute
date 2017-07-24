@@ -4,8 +4,8 @@
 		<img src="<? echo get_site_url(); ?>/wp-content/uploads/2017/07/de_logo.png" />
 	</div>
 	<video playsinline autoplay muted loop id="nameplate">
-		<source src="<? echo get_site_url(); ?>/wp-content/uploads/2017/07/home-video.mp4" type="video/mp4">
-		<source src="<? echo get_site_url(); ?>/wp-content/uploads/2017/07/home-video.webm" type="video/webm">
+		<source src="<? echo get_site_url(); ?>/wp-content/uploads/2017/07/new-background.mp4" type="video/mp4">
+		<source src="<? echo get_site_url(); ?>/wp-content/uploads/2017/07/new-background.webm" type="video/webm">
 	</video>
 </header>
 

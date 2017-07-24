@@ -11,12 +11,18 @@ License URI: https://www.gnu.org/licenses/gpl.html
 BlankSlate WordPress Theme © 2011-2015 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
+@font-face {
+  font-family: 'Helvetica';
+  src: url("Helvetica-Bold.eot");
+  src: url("Helvetica-Bold.eot?#iefix") format("embedded-opentype"), url("Helvetica-Bold.woff") format("woff"), url("Helvetica-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
 /*  Color variables  */
 /*  Screen size variables  */
 /*  Font Variables  */
 /*  Global Styles  */
 html {
-  font-size: 20px; }
+  font-size: 14px; }
 
 body {
   margin: 0; }
@@ -89,7 +95,6 @@ p {
       text-decoration: none;
       color: rgba(255, 255, 255, 0.2);
       font-family: "Open Sans", sans-serif;
-      cursor: pointer;
       transition: 0.3s;
       font-size: 1rem;
       padding: 0 10px 17px;
@@ -105,7 +110,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.95));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +126,7 @@ p {
 
 #home-header {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden; }
   #home-header video {
     width: 100%; }
@@ -141,7 +146,7 @@ p {
     #home-about span h1 {
       color: #5d9bd2;
       font-size: 2.5rem;
-      font-family: "Josefin Slab", serif; }
+      font-family: "Helvetica"; }
     #home-about span h2 {
       font-size: 1.5rem;
       color: #264158;
@@ -156,26 +161,27 @@ p {
   background-image: url("../../uploads/2017/07/pexels-photo-497295-e1500759882828.jpeg");
   background-size: cover;
   background-position: top;
-  margin-top: 40vh; }
+  margin-top: 20vh; }
   #home-services .background-container {
     padding: 0 8% 40vh 8%;
     box-sizing: border-box;
     flex-wrap: wrap;
-    background: linear-gradient(#fff, rgba(93, 155, 210, 0.8)); }
+    background: linear-gradient(#fff, rgba(93, 155, 210, 0.8));
+    align-items: flex-start; }
   #home-services h1, #home-services h3 {
     width: 100%;
     color: #264158; }
   #home-services h1 {
     font-size: 2.5rem;
-    font-family: "Josefin Slab", serif;
+    font-family: "Helvetica";
     color: #5d9bd2;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 3rem; }
+    margin-bottom: 3.3rem; }
   #home-services h3 {
     color: #264158;
     font-size: 1.4rem;
-    font-family: "Josefin Slab", serif;
+    font-family: "Helvetica";
     font-weight: 300; }
   #home-services p {
     font-family: "Open Sans", sans-serif; }
@@ -191,7 +197,9 @@ p {
   position: relative; }
   #home-contact #home-map {
     width: 100%;
-    height: 100vh; }
+    height: 100vh;
+    padding: 50px 0;
+    box-sizing: border-box; }
   #home-contact form {
     position: absolute;
     width: 50%;
@@ -287,3 +295,11 @@ footer {
         filter: invert(100%);
         -webkit-box-shadow: 1px 1px 10px #000;
         box-shadow: 1px 1px 10px #000; }
+
+/*  Responsive Styles  */
+@media screen and (min-width: 1281px) {
+  html {
+    font-size: 19px; }
+
+  #home-services {
+    margin-top: 40vh; } }

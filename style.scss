@@ -11,6 +11,16 @@ BlankSlate WordPress Theme © 2011-2015 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
 
+@font-face {
+	font-family: 'Helvetica';
+	src: url('Helvetica-Bold.eot');
+	src: url('Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Helvetica-Bold.woff') format('woff'),
+		url('Helvetica-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 /*  Color variables  */
 $blue: #5d9bd2;
 $darkblue: #264158;
@@ -23,12 +33,12 @@ $mobile: 580px;
 $smallmobile: 480px;
 
 /*  Font Variables  */
-$serif: 'Josefin Slab', serif;
+$serif: 'Helvetica';
 $sans: 'Open Sans', sans-serif;
 
 /*  Global Styles  */
 html {
-	font-size: 20px;
+	font-size: 14px;
 }
 
 body {
@@ -117,7 +127,6 @@ p {
 			text-decoration: none;
 			color: rgba(255,255,255,0.2);
 			font-family: $sans;
-			cursor: pointer;
 			transition: 0.3s;
 			font-size: 1rem;
 			padding: 0 10px 17px;
@@ -138,7 +147,7 @@ p {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255,255,255,0.6);
+	background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.95));
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -157,7 +166,7 @@ p {
 
 #home-header {
 	position: relative;
-	height: 90vh;
+	height: 100vh;
 	overflow: hidden;
 
 	video {
@@ -208,13 +217,14 @@ p {
 	background-image: url("../../uploads/2017/07/pexels-photo-497295-e1500759882828.jpeg");
 	background-size: cover;
 	background-position: top;
-	margin-top: 40vh;
+	margin-top: 20vh;
 
 	.background-container {
 		padding: 0 8% 40vh 8%;
 		box-sizing: border-box;
 		flex-wrap: wrap;
 		background: linear-gradient(#fff, rgba(93,155,210, 0.8));
+		align-items: flex-start;
 	}
 
 	h1, h3 {
@@ -228,7 +238,7 @@ p {
 		color: $blue;
 		font-weight: 300;
 		text-align: center;
-		margin-bottom: 3rem;
+		margin-bottom: 3.3rem;
 	}
 
 	h3 {
@@ -260,6 +270,8 @@ p {
 	#home-map {
 		width: 100%;
 		height: 100vh;
+		padding: 50px 0;
+		box-sizing: border-box;
 	}
 
 	form {
@@ -381,5 +393,33 @@ footer {
 	}
 }
 
+
+/*  Responsive Styles  */
+
+@media screen and (min-width: $desktop) {
+	html {
+		font-size: 19px;
+	}
+
+	#home-services {
+		margin-top: 40vh;
+	}
+}
+
+@media screen and (max-width: $laptop) {
+
+}
+
+@media screen and (max-width: $tablet) {
+	
+}
+
+@media screen and (max-width: $mobile) {
+	
+}
+
+@media screen and (max-width: $smallmobile) {
+	
+}
 
 
