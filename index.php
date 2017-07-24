@@ -27,7 +27,7 @@
 <a name="services"></a>
 <div id="home-services">
 	<div class="background-container flex-container">
-		<h1>This is the services section for D&amp;E Media</h1>
+		<h1>D&amp;E Media Services</h1>
 		<div class="col">
 			<img src="<? echo get_site_url(); ?>/wp-content/uploads/2017/07/004-video-player.png" />
 			<h3>Media Buying</h3>
