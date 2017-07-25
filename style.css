@@ -207,6 +207,7 @@ p {
   #home-services p {
     font-family: "Open Sans", sans-serif; }
   #home-services .col {
+    transition: 0.1s;
     text-align: center;
     width: 25%;
     padding: 0 25px;
@@ -214,6 +215,8 @@ p {
     box-sizing: border-box; }
     #home-services .col img {
       margin: 0 auto; }
+    #home-services .col:hover {
+      transform: scale(1.025, 1.025); }
 
 #home-contact {
   position: relative; }

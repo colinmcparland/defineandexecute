@@ -274,6 +274,7 @@ p {
 	}
 
 	.col {
+		transition: 0.1s;
 		text-align: center;
 		width: 25%;
 		padding: 0 25px;
@@ -282,6 +283,10 @@ p {
 
 		img {
 			margin: 0 auto;
+		}
+
+		&:hover {
+			transform: scale(1.025, 1.025);
 		}
 	}
 }
