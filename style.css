@@ -71,10 +71,18 @@ p {
   width: 100%;
   z-index: 300;
   padding: 20px 6%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   background: #5d9bd2; }
   #main-header:hover {
@@ -85,7 +93,11 @@ p {
       width: 100%; }
   #main-header ul {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 0;
     margin: 0; }
@@ -96,9 +108,11 @@ p {
       text-decoration: none;
       color: rgba(255, 255, 255, 0.5);
       font-family: "Open Sans", sans-serif;
+      -webkit-transition: 0.3s;
       transition: 0.3s;
       font-size: 1rem;
       padding: 0 10px 17px;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       #main-header li a:hover {
         color: #fff;
@@ -111,6 +125,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.95)));
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.95));
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,9 +180,14 @@ p {
   margin-top: 15vh; }
   #home-services .background-container {
     padding: 50px 8% 40vh 8%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(93, 155, 210, 0.7)));
     background: linear-gradient(#fff, rgba(93, 155, 210, 0.7));
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start; }
   #home-services h1, #home-services h3 {
     width: 100%;
@@ -190,6 +210,7 @@ p {
     text-align: center;
     width: 25%;
     padding: 0 25px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     #home-services .col img {
       margin: 0 auto; }
@@ -200,6 +221,7 @@ p {
     width: 100%;
     height: 100vh;
     padding: 50px 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box; }
   #home-contact form {
     position: absolute;
