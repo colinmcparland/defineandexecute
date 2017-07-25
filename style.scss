@@ -126,7 +126,7 @@ p {
 		margin: 0 50px;
 		a {
 			text-decoration: none;
-			color: rgba(255,255,255,0.2);
+			color: rgba(255,255,255,0.5);
 			font-family: $sans;
 			transition: 0.3s;
 			font-size: 1rem;
@@ -218,13 +218,13 @@ p {
 	background-image: url("../../uploads/2017/07/pexels-photo-497295-e1500759882828.jpeg");
 	background-size: cover;
 	background-position: top;
-	margin-top: 20vh;
+	margin-top: 15vh;
 
 	.background-container {
-		padding: 0 8% 40vh 8%;
+		padding: 50px 8% 40vh 8%;
 		box-sizing: border-box;
 		flex-wrap: wrap;
-		background: linear-gradient(#fff, rgba(93,155,210, 0.8));
+		background: linear-gradient(#fff, rgba(93,155,210, 0.7));
 		align-items: flex-start;
 	}
 
