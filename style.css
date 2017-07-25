@@ -32,7 +32,7 @@ img {
 
 strong {
   font-weight: 700;
-  color: #264158; }
+  color: #5d9bd2; }
 
 p {
   font-weight: 300; }
@@ -177,7 +177,7 @@ p {
   background-image: url("../../uploads/2017/07/pexels-photo-497295-e1500759882828.jpeg");
   background-size: cover;
   background-position: top;
-  margin-top: 15vh; }
+  margin-top: 10vh; }
   #home-services .background-container {
     padding: 50px 8% 40vh 8%;
     -webkit-box-sizing: border-box;
